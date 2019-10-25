@@ -16,7 +16,7 @@ If this is your first time running the program:
 1. Run 'bundle install'.
 2. Run 'rake start_up'
 
-If you want to reseed your database:
+If you've already run the previous two steps:
 1. Run 'rake refresh' to reseed and start the program.
 
 ## Usage
