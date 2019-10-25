@@ -14,13 +14,11 @@ Follow the following instructions to use our CLI app on your very own computer.
 ### Setup and Start
 If this is your first time running the program:
 1. Run 'bundle install'.
-2. Run 'rake start_up' to create the databa
-If you've run this program before:
-1. Make sure you're in the correct directory
-2. Run 'ruby bin/run.rb' to start the program
-NOTE: You can run 'rake start_up' at any time from your terminal to clear and re-seed the database with the original data
-
-
+2. Run 'rake db:migrate'
+3. Run 'rake db:seed'
+4. Run 'ruby bin/run.rb'
+If you want to reseed your database:
+1. Run 'rake refresh' to reseed and start the program.
 
 ## Usage
 
