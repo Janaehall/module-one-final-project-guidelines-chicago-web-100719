@@ -12,8 +12,15 @@ Follow the following instructions to use our CLI app on your very own computer.
 2. Change into the newly cloned directory in your terminal.
 
 ### Setup and Start
+If this is your first time running the program:
 1. Run 'bundle install'.
-2. Run 'rake start_up' to install the gems, create the database, and seed the database with data from our API.
+2. Run 'rake start_up' to create the database, seed it with data from our API, and run the program!
+If you've run this program before:
+1. Make sure you're in the correct directory
+2. Run 'ruby bin/run.rb' to start the program
+NOTE: You can run 'rake start_up' at any time from your terminal to clear and re-seed the database with the original data
+
+
 
 ## Usage
 

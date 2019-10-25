@@ -7,7 +7,7 @@ task :console do
   Pry.start
 end
 
-desc 'migrates, seeds, starts app OR refreshes database'
+desc 'migrates, seeds, starts app'
 task :start_up do
   if !Player.all
     puts "Migrating..."
@@ -15,7 +15,9 @@ task :start_up do
     puts "Seeding..."
     Rake::Task['db:seed'].invoke
   else
-    5.times do
+
+desc 're-seeds database with original data, starts program'
+    5.times do  
       Rake::Task["db:rollback"]
       end
     begin
@@ -32,7 +34,6 @@ task :start_up do
     end
     Rake::Task["db:migrate"].invoke
     Rake::Task["db:seed"].invoke
-  end
   ruby "bin/run.rb"
 end
 
