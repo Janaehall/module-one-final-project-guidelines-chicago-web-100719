@@ -9,7 +9,6 @@ end
 
 desc 'migrates, seeds, starts app'
 task :start_up do
-  if !Player.all
     puts "Migrating..."
     Rake::Task['db:migrate'].invoke
     puts "Seeding..."
@@ -17,6 +16,7 @@ task :start_up do
   else
 
 desc 're-seeds database with original data, starts program'
+task :refresh do
     5.times do  
       Rake::Task["db:rollback"]
       end
