@@ -14,7 +14,7 @@ Follow the following instructions to use our CLI app on your very own computer.
 ### Setup and Start
 If this is your first time running the program:
 1. Run 'bundle install'.
-2. Run 'rake start_up' to create the database, seed it with data from our API, and run the program!
+2. Run 'rake start_up' to create the databa
 If you've run this program before:
 1. Make sure you're in the correct directory
 2. Run 'ruby bin/run.rb' to start the program
