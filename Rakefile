@@ -11,6 +11,7 @@ desc 'migrates, seeds, starts app'
 task :start_up do
     Rake::Task["db:migrate"].invoke
     Rake::Task["db:seed"].invoke
+    ruby "bin/run.rb"
 end
 
 desc 're-seeds database with original data, starts program'
