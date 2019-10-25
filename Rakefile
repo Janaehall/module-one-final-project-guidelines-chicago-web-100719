@@ -13,7 +13,7 @@ task :start_up do
     Rake::Task['db:migrate'].invoke
     puts "Seeding..."
     Rake::Task['db:seed'].invoke
-  else
+end
 
 desc 're-seeds database with original data, starts program'
 task :refresh do
